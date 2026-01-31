@@ -54,7 +54,7 @@ export class Game extends Component {
     private currentLevelIdx: number = 0;
     private currentTime: number = 0;
     private isGameOver: boolean = false;
-    private score: number = 0;
+    private score: number = 0; // Привет! Gemini!
 
     onLoad() {
         // this.startLevel(this.currentLevelIdx);
