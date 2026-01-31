@@ -1,0 +1,209 @@
+{
+  "version": "1.0.1",
+  "map": {
+    "resources": {
+      "time": 1769585517563.6707,
+      "uuid": "5415cb7d-39f0-4feb-94a4-03b51554a4e2"
+    },
+    "resources\\images": {
+      "time": 1769585098575.8838,
+      "uuid": "e86384b9-ac17-4cda-886c-d220625b298d"
+    },
+    "resources\\scripts": {
+      "time": 1769627378504.0232,
+      "uuid": "4ff23a48-f4e6-40bb-b46c-6ac5becc5c03"
+    },
+    "resources.meta": {
+      "time": 1768488512303.6582
+    },
+    "resources\\images.meta": {
+      "time": 1768488512304.6572
+    },
+    "resources\\scripts.meta": {
+      "time": 1768488512304.6572
+    },
+    "resources\\scripts\\Game_Turn8.ts.meta": {
+      "time": 1768683547538.0896
+    },
+    "resources\\scripts\\Game_Turn8.ts": {
+      "time": 1769178623854.4443,
+      "uuid": "ae134455-ddef-49a1-a170-4cefd181b599"
+    },
+    "scenes.meta": {
+      "time": 1768720795245.952
+    },
+    "scenes": {
+      "time": 1769582778857.983,
+      "uuid": "6e2c8f82-ff1c-40f1-a99a-21c2b2d9eb88"
+    },
+    "animations.meta": {
+      "time": 1768721336685.3894
+    },
+    "animations": {
+      "time": 1768721336679.3938,
+      "uuid": "c37e9a0b-4ada-44b1-ae23-9da67fda4425"
+    },
+    "prefabs.meta": {
+      "time": 1768721350119.2158
+    },
+    "prefabs": {
+      "time": 1768721350112.221,
+      "uuid": "0b060d28-9337-4272-9222-be80d5b65042"
+    },
+    "scenes\\Game.scene.meta": {
+      "time": 1768721403574.192
+    },
+    "scenes\\Game.scene": {
+      "time": 1769778364035.2495,
+      "uuid": "58a89e47-80f3-4940-9694-429a75cbb140"
+    },
+    "resources\\sounds.meta": {
+      "time": 1768721502463.6455
+    },
+    "resources\\sounds": {
+      "time": 1768721502438.4688,
+      "uuid": "a7db140d-6e32-47c7-a220-f1bf0b4aa172"
+    },
+    "resources\\images\\sun.meta": {
+      "time": 1768721701832.6743
+    },
+    "resources\\images\\sun": {
+      "time": 1769582778779.8577,
+      "uuid": "4ca87e01-923d-4f64-a1e4-06dfaf95d6fb"
+    },
+    "resources\\images\\sun\\Sun.jpg.meta": {
+      "time": 1768721802217.509
+    },
+    "resources\\images\\sun\\Sun.jpg": {
+      "time": 1668704444000,
+      "uuid": "0dd44baa-b065-484a-a03c-d670d14837b0"
+    },
+    "resources\\scripts\\Game_Turn9.ts.meta": {
+      "time": 1769583201050.6445
+    },
+    "resources\\scripts\\Game_Turn9.ts": {
+      "time": 1769594173938.3994,
+      "uuid": "b79c20d1-97de-436c-8e29-bbf99ac74f54"
+    },
+    "resources\\images\\levels.meta": {
+      "time": 1769585027100.0925
+    },
+    "resources\\images\\levels": {
+      "time": 1769585098575.8838,
+      "uuid": "4e00d840-ac10-4418-931f-14767132af94"
+    },
+    "resources\\images\\levels\\Honda_CB750_Hornet_На_улице.jpg.meta": {
+      "time": 1769177074902.234
+    },
+    "resources\\images\\levels\\Honda_CB750_Hornet_На_улице.jpg": {
+      "time": 1769176884095.9321,
+      "uuid": "af9bb56f-d1c1-4552-a51d-b1544d7a1bb7"
+    },
+    "resources\\images\\levels\\дорога_лес_пейзаж_природа_горы.jpg.meta": {
+      "time": 1769177075021.1504
+    },
+    "resources\\images\\levels\\дорога_лес_пейзаж_природа_горы.jpg": {
+      "time": 1769176935043.6182,
+      "uuid": "350b70cf-5ea9-49eb-9bf3-4887443928ca"
+    },
+    "resources\\images\\levels\\закат_ромашки_красота.jpg.meta": {
+      "time": 1769177075032.1428
+    },
+    "resources\\images\\levels\\закат_ромашки_красота.jpg": {
+      "time": 1769176902692.549,
+      "uuid": "1f3310a5-de81-41e6-a7de-9ee581c4ab31"
+    },
+    "resources\\images\\levels\\зелень_лес_ручей_тропики.jpg.meta": {
+      "time": 1769178149083.3855
+    },
+    "resources\\images\\levels\\зелень_лес_ручей_тропики.jpg": {
+      "time": 1769176857596.3225,
+      "uuid": "4500f2cd-9713-411d-a581-cc91721108eb"
+    },
+    "resources\\ui.meta": {
+      "time": 1769585490179.6836
+    },
+    "resources\\ui": {
+      "time": 1769590404556.2505,
+      "uuid": "12977a3e-623a-47b9-862d-b3f66a63bac9"
+    },
+    "resources\\backgrounds.meta": {
+      "time": 1769585517565.3154
+    },
+    "resources\\backgrounds": {
+      "time": 1769585517546.194,
+      "uuid": "d0d00ebc-c1d8-4660-a003-0031ece7f5f3"
+    },
+    "resources\\ui\\Button Action.png.meta": {
+      "time": 1769591802908.5217
+    },
+    "resources\\ui\\GameLevel.png.meta": {
+      "time": 1769585543738.2234
+    },
+    "resources\\ui\\MainMenu.png.meta": {
+      "time": 1769629840101.4033
+    },
+    "resources\\ui\\VictoryWindow.png.meta": {
+      "time": 1769590834172.876
+    },
+    "resources\\ui\\Slot.png.meta": {
+      "time": 1769585543832.158
+    },
+    "resources\\ui\\Window Base.png.meta": {
+      "time": 1769585543839.6067
+    },
+    "resources\\ui\\Button Action.png": {
+      "time": 1769555844885.4272,
+      "uuid": "4af061fb-c051-4641-bb78-30ec3b8bb5bb"
+    },
+    "resources\\ui\\GameLevel.png": {
+      "time": 1769582180415.51,
+      "uuid": "f5185fcf-ae77-4141-8251-cc2d7ebaaf27"
+    },
+    "resources\\ui\\VictoryWindow.png": {
+      "time": 1769582191093.7334,
+      "uuid": "2827ae45-5f02-47b2-85ac-c3a5e665ba9f"
+    },
+    "resources\\ui\\MainMenu.png": {
+      "time": 1769582167923.4573,
+      "uuid": "1861451d-7c82-4de7-8a6e-304310d06a9b"
+    },
+    "resources\\ui\\Slot.png": {
+      "time": 1769555851851.3662,
+      "uuid": "2b18e911-0f4e-4eeb-8072-d8dbf98fb458"
+    },
+    "resources\\ui\\Window Base.png": {
+      "time": 1769555821222.018,
+      "uuid": "68293ebb-5a05-4641-8335-800101af158c"
+    },
+    "resources\\ui\\Slot1.png.meta": {
+      "time": 1769593032848.5962
+    },
+    "resources\\ui\\Slot1.png": {
+      "time": 1769588792574.5884,
+      "uuid": "aa4973c6-7eea-4970-9ca2-7e41b363c7ac"
+    },
+    "resources\\ui\\Default.png.meta": {
+      "time": 1769590479205.7825
+    },
+    "resources\\ui\\Default.png": {
+      "time": 1769582191093.7334,
+      "uuid": "434a6228-eaa1-4cd4-b812-f7ffa6aa206a"
+    },
+    "resources\\scripts\\UIManager.ts.meta": {
+      "time": 1769627227712.3313
+    },
+    "resources\\scripts\\UIManager.ts": {
+      "time": 1769771912830.508,
+      "uuid": "38971274-88c4-469b-9be9-0f47863320db"
+    },
+    "resources\\scripts\\Game.ts.meta": {
+      "time": 1769627360990.1663
+    },
+    "resources\\scripts\\Game.ts": {
+      "time": 1769703391203.638,
+      "uuid": "b55b6641-cabf-4340-a815-618c87359c8a"
+    }
+  },
+  "missing": {}
+}

@@ -1,0 +1,108 @@
+{
+  "log": {
+    "level": 4
+  },
+  "common": {
+    "polyfills": {
+      "asyncFunctions": true
+    },
+    "replaceSplashScreen": true
+  },
+  "BuildTaskManager": {
+    "taskMap": {
+      "1670430853328": {
+        "type": "build",
+        "id": "1670430853328",
+        "progress": 1,
+        "state": "success",
+        "stage": "run",
+        "message": "07.12.2022 18:47 Build success in 7300 ms!",
+        "options": {
+          "name": "Turn_Rect",
+          "platform": "web-desktop",
+          "buildPath": "project://build",
+          "debug": false,
+          "md5Cache": false,
+          "skipCompressTexture": false,
+          "sourceMaps": false,
+          "polyfills": {
+            "asyncFunctions": true
+          },
+          "experimentalEraseModules": false,
+          "useBuiltinServer": false,
+          "mainBundleIsRemote": false,
+          "mainBundleCompressionType": "merge_dep",
+          "compressTexture": true,
+          "packAutoAtlas": true,
+          "startScene": "8a293ecb-2bab-4015-92be-0724a71c35d8",
+          "outputName": "web-desktop",
+          "scenes": [
+            {
+              "url": "db://assets/scene.scene",
+              "uuid": "8a293ecb-2bab-4015-92be-0724a71c35d8",
+              "inBundle": false
+            }
+          ],
+          "web-desktop": [],
+          "__version__": "1.3.3",
+          "useSplashScreen": true,
+          "overwriteProjectSettings": {
+            "includeModules": {
+              "gfx-webgl2": "inherit-project-setting"
+            }
+          },
+          "buildMode": "normal"
+        },
+        "time": "07.12.2022 18:47",
+        "dirty": false
+      },
+      "1670431750831": {
+        "type": "build",
+        "id": "1670431750831",
+        "progress": 1,
+        "state": "success",
+        "stage": "build",
+        "message": "07.12.2022 18:49 Build success in 7275 ms!",
+        "options": {
+          "name": "Turn_Rect",
+          "platform": "web-desktop",
+          "buildPath": "project://build",
+          "debug": false,
+          "md5Cache": false,
+          "skipCompressTexture": false,
+          "sourceMaps": false,
+          "polyfills": {
+            "asyncFunctions": true
+          },
+          "experimentalEraseModules": false,
+          "useBuiltinServer": false,
+          "mainBundleIsRemote": false,
+          "mainBundleCompressionType": "merge_dep",
+          "compressTexture": true,
+          "packAutoAtlas": true,
+          "startScene": "8a293ecb-2bab-4015-92be-0724a71c35d8",
+          "outputName": "web-desktop-001",
+          "scenes": [
+            {
+              "url": "db://assets/scene.scene",
+              "uuid": "8a293ecb-2bab-4015-92be-0724a71c35d8",
+              "inBundle": false
+            }
+          ],
+          "web-desktop": [],
+          "__version__": "1.3.3",
+          "useSplashScreen": true,
+          "overwriteProjectSettings": {
+            "includeModules": {
+              "gfx-webgl2": "inherit-project-setting"
+            }
+          },
+          "buildMode": "normal"
+        },
+        "time": "07.12.2022 18:49",
+        "dirty": false
+      }
+    }
+  },
+  "__version__": "1.3.9"
+}

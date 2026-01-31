@@ -1,0 +1,68 @@
+{
+  "game": {
+    "app_id": "604304721",
+    "name": "Turn_Rect",
+    "c_id": "0"
+  },
+  "appConfigMaps": [
+    {
+      "app_id": "UNKNOW",
+      "config_id": "d2b501"
+    },
+    {
+      "app_id": "604304722",
+      "config_id": "ac474c"
+    },
+    {
+      "app_id": "604304721",
+      "config_id": "e72010"
+    }
+  ],
+  "configs": [
+    {
+      "app_id": "UNKNOW",
+      "config_id": "d2b501",
+      "config_name": "Default",
+      "config_remarks": "",
+      "services": []
+    },
+    {
+      "app_id": "604304722",
+      "config_id": "3fc5a1",
+      "config_name": "Default",
+      "config_remarks": "",
+      "services": []
+    },
+    {
+      "app_id": "604304722",
+      "config_id": "ac474c",
+      "config_name": "Default",
+      "config_remarks": "",
+      "services": []
+    },
+    {
+      "app_id": "604304721",
+      "config_id": "e8ce24",
+      "config_name": "Default",
+      "config_remarks": "",
+      "services": []
+    },
+    {
+      "app_id": "604304721",
+      "config_id": "e72010",
+      "config_name": "Default",
+      "config_remarks": "",
+      "services": [
+        {
+          "service_id": "235",
+          "enable": true,
+          "param": {
+            "app_id": "604304721",
+            "store_id": "H5"
+          }
+        }
+      ]
+    }
+  ],
+  "__version__": "3.0.9"
+}

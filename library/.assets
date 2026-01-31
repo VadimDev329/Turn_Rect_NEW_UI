@@ -1,0 +1,36 @@
+{
+    "version": "1.0.1",
+    "data": {
+        "paths": [
+            "animations",
+            "prefabs",
+            "resources",
+            "scenes",
+            "resources\\backgrounds",
+            "resources\\images",
+            "resources\\scripts",
+            "resources\\sounds",
+            "resources\\ui",
+            "resources\\images\\levels",
+            "resources\\images\\sun",
+            "resources\\scripts\\Game.ts",
+            "resources\\scripts\\Game_Turn8.ts",
+            "resources\\scripts\\Game_Turn9.ts",
+            "resources\\scripts\\UIManager.ts",
+            "scenes\\Game.scene",
+            "resources\\ui\\Button Action.png",
+            "resources\\ui\\Default.png",
+            "resources\\ui\\GameLevel.png",
+            "resources\\ui\\MainMenu.png",
+            "resources\\ui\\Slot.png",
+            "resources\\ui\\Slot1.png",
+            "resources\\ui\\VictoryWindow.png",
+            "resources\\ui\\Window Base.png",
+            "resources\\images\\levels\\Honda_CB750_Hornet_На_улице.jpg",
+            "resources\\images\\levels\\дорога_лес_пейзаж_природа_горы.jpg",
+            "resources\\images\\levels\\закат_ромашки_красота.jpg",
+            "resources\\images\\levels\\зелень_лес_ручей_тропики.jpg",
+            "resources\\images\\sun\\Sun.jpg"
+        ]
+    }
+}
