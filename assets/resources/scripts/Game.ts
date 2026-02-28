@@ -1,8 +1,6 @@
 import { _decorator, Component, Node, Label, resources, Sprite, SpriteFrame, math, EventTouch, UITransform, Layers, rect, tween, Vec3, Color, Enum } from 'cc';
-import { UIManager } from "./UIManager";
+import { UIManager } from "./UIManager2";
 const { ccclass, property } = _decorator;
-
-
 
 interface ILevel {
     rows: number;
@@ -61,17 +59,15 @@ export class Game extends Component {
     }
 
     start() {
-        // ПРОВЕРКА: Если всё связано, игра сама включит режим игры
-        // Если хочешь начать с меню — замени на 'MENU'
         if (this.ui) {
-            this.ui.showState('GAME');
+            this.ui.switchWindow(null, 'GamePlay'); // 'GamePlay' закрывает все окна и запускает игру
         }
         this.startLevel(this.currentLevelIdx);
     }
 
     // Когда пазл собран, вызывай это:
     public onWin() {
-        if (this.ui) this.ui.showState('VICTORY');
+        if (this.ui) this.ui.switchWindow(null, 'Window_Victory');
     }
 
     // Метод специально для кнопки "Next" или авто-перехода
@@ -82,11 +78,44 @@ export class Game extends Component {
             this.startLevel(this.currentLevelIdx);
         } else {
             // Если уровни кончились — в меню
-            this.ui.showState('MENU');
+            // this.ui.showState('MENU');
+            if (this.ui) this.ui.switchWindow(null, 'Window_Victory');
             this.currentLevelIdx = 0;
         }
     }
 
+    // Метод для кнопок выбора уровня (1, 2, 3...)
+    public onLevelSelectClick(event: any, levelIndex: string) {
+        // 1. Закрываем UI, возвращаемся в игру
+        if (this.ui) {
+            this.ui.switchWindow(null, 'GamePlay');
+        }
+
+        // 2. Запускаем выбранный уровень
+        // levelIndex придет из CustomEventData как строка "0", "1" и т.д.
+        const idx = parseInt(levelIndex);
+
+        if (!isNaN(idx) && idx < this.levels.length) {
+            this.currentLevelIdx = idx;
+            this.startLevel(this.currentLevelIdx);
+            console.log("Загружаем уровень №:", idx + 1);
+        } else {
+            console.error("Уровень с индексом " + levelIndex + " не найден!");
+        }
+    }
+
+    // Метод для кнопки Рестарт
+    public onRestartClick() {
+        // 1. Закрываем UI (если кнопка нажата в окне паузы или победы)
+        if (this.ui) {
+            this.ui.switchWindow(null, 'GamePlay');
+        }
+
+        // 2. Перезапускаем текущий уровень
+        console.log("Рестарт уровня:", this.currentLevelIdx + 1);
+        this.startLevel(this.currentLevelIdx);
+    }
+    
     startLevel(idx: number) {
         const config = this.levels[idx];
         this.currentTime = config.time;
@@ -468,27 +497,10 @@ export class Game extends Component {
         }
 
         this.stopGame();
-        /*
-        // ВОТ ЭТОТ БЛОК "АВТОПИЛОТА":
-        if (reason === "VICTORY!") {
-            this.ui.showState('VICTORY');
-            this.scheduleOnce(() => {
-                this.currentLevelIdx++; // Готовим следующий уровень
 
-                // Проверяем, есть ли у нас еще уровни в списке
-                if (this.currentLevelIdx < this.levels.length) {
-                    this.startLevel(this.currentLevelIdx);
-                    this.ui.showState('GAME');
-                } else {
-                    // Если уровни закончились
-                    if (this.stateLabel) this.stateLabel.string = "YOU ARE THE CHAMPION!";
-                    this.currentLevelIdx = 0; // Сбрасываем на начало на всякий случай
-                }
-            }, 4.0);
-        }
-        */
         if (reason === "VICTORY!") {
-            this.ui.showState('VICTORY');
+            //this.ui.showState('VICTORY');
+            if (this.ui) this.ui.switchWindow(null, 'Window_Victory');
             // Больше ничего не делаем. Ждем, пока игрок нажмет кнопку, 
             // которая вызовет UIManager -> onNextLevelBtnClick
         }

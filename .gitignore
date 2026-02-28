@@ -134,3 +134,22 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Временные папки движка и сборки
+library/
+temp/
+local/
+build/
+profiles/
+
+# Зависимости Node.js (самое тяжелое)
+node_modules/
+
+# Логи и кэш
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+
+# Если используешь VS Code
+.vscode/

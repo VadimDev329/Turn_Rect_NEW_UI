@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 53431.784,
+      "mTimestamp": 17731.585,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -997,7 +997,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 67040.168,
+      "mTimestamp": 28867.0958,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -1139,6 +1139,20 @@
               "column": 1471
             }
           }
+        },
+        {
+          "value": "file:///D:/ENGINES/Cocos/PROJECTS/103_2/387/ST/NEW/Rect/Turn_Rect_NEW_UI/assets/resources/scripts/UIManager2.ts",
+          "resolved": "__unresolved_10",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 1487
+            },
+            "end": {
+              "line": 5,
+              "column": 1600
+            }
+          }
         }
       ],
       "type": "esm",
@@ -1210,6 +1224,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///D:/ENGINES/Cocos/PROJECTS/103_2/387/ST/NEW/Rect/Turn_Rect_NEW_UI/assets/resources/scripts/UIManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/ENGINES/Cocos/PROJECTS/103_2/387/ST/NEW/Rect/Turn_Rect_NEW_UI/assets/resources/scripts/UIManager2.ts"
           },
           "messages": []
         }
@@ -2142,7 +2163,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1769884927565,
+      "mTimestamp": 1771952042384,
       "chunkId": "6a5019a719a9014c047e67aa1cf34453ab8392ce",
       "imports": [],
       "type": "esm",
@@ -3222,7 +3243,7 @@
     },
     "file:///D:/ENGINES/Cocos/PROJECTS/103_2/387/ST/NEW/Rect/Turn_Rect_NEW_UI/assets/resources/scripts/Game.ts": {
       "mTimestamp": {
-        "mtime": 1769703391203.638,
+        "mtime": 1770377510325.8179,
         "uuid": "b55b6641-cabf-4340-a815-618c87359c8a"
       },
       "chunkId": "8cf3f07af4bd22d192bfa1334c43befef8a6a655",
@@ -3251,7 +3272,7 @@
           }
         },
         {
-          "value": "./UIManager",
+          "value": "./UIManager2",
           "resolved": "__unresolved_1",
           "loc": {
             "start": {
@@ -3260,7 +3281,7 @@
             },
             "end": {
               "line": 2,
-              "column": 39
+              "column": 40
             }
           }
         }
@@ -3298,7 +3319,7 @@
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/ENGINES/Cocos/PROJECTS/103_2/387/ST/NEW/Rect/Turn_Rect_NEW_UI/assets/resources/scripts/UIManager.ts"
+            "url": "file:///D:/ENGINES/Cocos/PROJECTS/103_2/387/ST/NEW/Rect/Turn_Rect_NEW_UI/assets/resources/scripts/UIManager2.ts"
           },
           "messages": []
         }
@@ -3837,6 +3858,58 @@
             "end": {
               "line": 1,
               "column": 224
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/ENGINES/Cocos/PROJECTS/103_2/387/ST/NEW/Rect/Turn_Rect_NEW_UI/assets/resources/scripts/UIManager2.ts": {
+      "mTimestamp": {
+        "mtime": 1770376880046.746,
+        "uuid": "4685699d-ba51-4457-9ae2-a55cf881fed0"
+      },
+      "chunkId": "77a0113d0728a86021347b6eb163a680ab1470d6",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 54
+            },
+            "end": {
+              "line": 1,
+              "column": 58
             }
           }
         }

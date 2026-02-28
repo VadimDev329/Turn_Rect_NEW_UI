@@ -1,7 +1,7 @@
 {
   "preview": {
     "current": {
-      "platform": "browser"
+      "platform": "gameView"
     }
   },
   "__version__": "1.0.1"

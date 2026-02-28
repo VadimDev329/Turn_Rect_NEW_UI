@@ -10,7 +10,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
   function _initializerWarningHelper(descriptor, context) { throw new Error('Decorating class property failed. Please ensure that ' + 'transform-class-properties is enabled and runs after the decorators transform.'); }
 
   function _reportPossibleCrUseOfUIManager(extras) {
-    _reporterNs.report("UIManager", "./UIManager", _context.meta, extras);
+    _reporterNs.report("UIManager", "./UIManager2", _context.meta, extras);
   }
 
   return {
@@ -131,14 +131,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this.countdownValue = 3;
         }
 
+        // Привет! Gemini!
         onLoad() {// this.startLevel(this.currentLevelIdx);
         }
 
         start() {
-          // ПРОВЕРКА: Если всё связано, игра сама включит режим игры
-          // Если хочешь начать с меню — замени на 'MENU'
           if (this.ui) {
-            this.ui.showState('GAME');
+            this.ui.switchWindow(null, 'GamePlay'); // 'GamePlay' закрывает все окна и запускает игру
           }
 
           this.startLevel(this.currentLevelIdx);
@@ -146,7 +145,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
 
         onWin() {
-          if (this.ui) this.ui.showState('VICTORY');
+          if (this.ui) this.ui.switchWindow(null, 'Window_Victory');
         } // Метод специально для кнопки "Next" или авто-перехода
         // Внутри класса Game в Game.ts
 
@@ -158,9 +157,42 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
             this.startLevel(this.currentLevelIdx);
           } else {
             // Если уровни кончились — в меню
-            this.ui.showState('MENU');
+            // this.ui.showState('MENU');
+            if (this.ui) this.ui.switchWindow(null, 'Window_Victory');
             this.currentLevelIdx = 0;
           }
+        } // Метод для кнопок выбора уровня (1, 2, 3...)
+
+
+        onLevelSelectClick(event, levelIndex) {
+          // 1. Закрываем UI, возвращаемся в игру
+          if (this.ui) {
+            this.ui.switchWindow(null, 'GamePlay');
+          } // 2. Запускаем выбранный уровень
+          // levelIndex придет из CustomEventData как строка "0", "1" и т.д.
+
+
+          const idx = parseInt(levelIndex);
+
+          if (!isNaN(idx) && idx < this.levels.length) {
+            this.currentLevelIdx = idx;
+            this.startLevel(this.currentLevelIdx);
+            console.log("Загружаем уровень №:", idx + 1);
+          } else {
+            console.error("Уровень с индексом " + levelIndex + " не найден!");
+          }
+        } // Метод для кнопки Рестарт
+
+
+        onRestartClick() {
+          // 1. Закрываем UI (если кнопка нажата в окне паузы или победы)
+          if (this.ui) {
+            this.ui.switchWindow(null, 'GamePlay');
+          } // 2. Перезапускаем текущий уровень
+
+
+          console.log("Рестарт уровня:", this.currentLevelIdx + 1);
+          this.startLevel(this.currentLevelIdx);
         }
 
         startLevel(idx) {
@@ -537,27 +569,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           }
 
           this.stopGame();
-          /*
-          // ВОТ ЭТОТ БЛОК "АВТОПИЛОТА":
-          if (reason === "VICTORY!") {
-              this.ui.showState('VICTORY');
-              this.scheduleOnce(() => {
-                  this.currentLevelIdx++; // Готовим следующий уровень
-                    // Проверяем, есть ли у нас еще уровни в списке
-                  if (this.currentLevelIdx < this.levels.length) {
-                      this.startLevel(this.currentLevelIdx);
-                      this.ui.showState('GAME');
-                  } else {
-                      // Если уровни закончились
-                      if (this.stateLabel) this.stateLabel.string = "YOU ARE THE CHAMPION!";
-                      this.currentLevelIdx = 0; // Сбрасываем на начало на всякий случай
-                  }
-              }, 4.0);
-          }
-          */
 
           if (reason === "VICTORY!") {
-            this.ui.showState('VICTORY'); // Больше ничего не делаем. Ждем, пока игрок нажмет кнопку, 
+            //this.ui.showState('VICTORY');
+            if (this.ui) this.ui.switchWindow(null, 'Window_Victory'); // Больше ничего не делаем. Ждем, пока игрок нажмет кнопку, 
             // которая вызовет UIManager -> onNextLevelBtnClick
           }
         }
